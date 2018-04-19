@@ -27,7 +27,7 @@ namespace OperacoesCondicionais
              de quebra de linha \n (contra-barra) n(new lin)). assim as opçoes ficarão uma abaixo da outra.
               */
 
-              Console.WriteLine("1 -Soma\n2-Subtrair\n3-Multiplicar\n4-Dividir");
+              Console.WriteLine("1-Soma\n2-Subtrair\n3-Multiplicar\n4-Dividir");
               opereacao = int.Parse(Console.ReadLine());
               
               Console.WriteLine("Digite um Número:");
@@ -35,7 +35,29 @@ namespace OperacoesCondicionais
 
               Console.WriteLine("Digite outro Número:");
               n2 = double.Parse(Console.ReadLine());
+        
 
+                if(opereacao==1)
+                {
+                    Console.WriteLine("O resultado da soma é: "+(n1+n2));
+                }
+                else if(opereacao==2)
+                {
+                Console.WriteLine("O resultado da subtração é: "+(n1-n2));
+                }
+                else if(opereacao==3)
+                {
+                Console.WriteLine("O resultado da Multiplicação é: "+(n1*n2));
+                }
+                else if(opereacao==4)
+                {
+                Console.WriteLine("O resultado da divisão é: "+(n1/n2));
+                }
+                else
+                {
+                    Console.WriteLine("##############################   Opss.. operação inválida, desculpe... :/    ############################## ");
+                }
+            
         }
     }
 }
